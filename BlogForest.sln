@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogForest.EntityLayer", "BlogForest.EntityLayer\BlogForest.EntityLayer.csproj", "{494CF540-1C40-43E0-A7B5-1579474806BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogForest.DataAccessLayer", "BlogForest.DataAccessLayer\BlogForest.DataAccessLayer.csproj", "{AD4DB1E7-149B-4E83-9E5B-BCCDB2C584E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{494CF540-1C40-43E0-A7B5-1579474806BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{494CF540-1C40-43E0-A7B5-1579474806BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494CF540-1C40-43E0-A7B5-1579474806BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4DB1E7-149B-4E83-9E5B-BCCDB2C584E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4DB1E7-149B-4E83-9E5B-BCCDB2C584E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4DB1E7-149B-4E83-9E5B-BCCDB2C584E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4DB1E7-149B-4E83-9E5B-BCCDB2C584E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
