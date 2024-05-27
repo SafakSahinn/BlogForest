@@ -1,4 +1,5 @@
-﻿using BlogForest.EntityLayer.Concrete;
+﻿using BlogForest.DtoLayer.RegisterDtos;
+using BlogForest.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +20,24 @@ namespace BlogForest.WebUI.Controllers
 			return View();
 		}
 		[HttpPost]
-		public async Task<IActionResult> CreateUser()
+		public async Task<IActionResult> CreateUser(CreateRegisterDto createRegisterDto)
 		{
+			AppUser appUser = new AppUser()
+			{
+				Name = createRegisterDto.Name,
+				Email = createRegisterDto.Email,
+				Surname = createRegisterDto.Surname,
+				ImageUrl = createRegisterDto.ImageUrl,
+				Description = createRegisterDto.Description,
+				UserName = createRegisterDto.Username
+			};
 
+			var result = await _userManager.CreateAsync(appUser, createRegisterDto.Password);
+			if(result.Succeeded)
+			{
+				return RedirectToAction("Index", "Default");
+			}
+			return View();
 		}
 	}
 }
