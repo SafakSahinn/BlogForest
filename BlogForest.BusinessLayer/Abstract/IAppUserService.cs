@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlogForest.DataAccessLayer.Abstract
+namespace BlogForest.BusinessLayer.Abstract
 {
-	public interface IAppUserDal : IGenericDal<AppUser>
+	public interface IAppUserService : IGenericService<AppUser>
 	{
-		AppUser GetAppUserDetail(int id);
+		public AppUser TGetAppUserDetail(int id);
 	}
 }

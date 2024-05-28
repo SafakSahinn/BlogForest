@@ -57,7 +57,7 @@
 
 					<hr class="invis1">
 
-					@await Component.InvokeAsync("_AboutAuthorUserComponentPartial")
+					@await Component.InvokeAsync("_AboutAuthorUserComponentPartial", new {id = ViewBag.i})
 					<!-- end author-box -->
 
 					<hr class="invis1">
