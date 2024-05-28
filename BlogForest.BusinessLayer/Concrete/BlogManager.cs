@@ -29,7 +29,7 @@ namespace BlogForest.BusinessLayer.Concrete
 
         public Blog TGetById(int id)
 		{
-			throw new NotImplementedException();
+			return _blogDal.GetById(id);
 		}
 
 		public List<Blog> TGetListAll()
